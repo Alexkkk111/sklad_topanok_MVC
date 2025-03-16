@@ -19,6 +19,7 @@ class Shoecontroller:
             for shoe in self.model.shoes:
                 if shoe.id==id:
                     self.model.delete_shoe(shoe)
+                    break
 
     def display_shoes(self):
         shoes=self.model.get_shoes()
